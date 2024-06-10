@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>register</title>
+        <style>
+             body{
+                background-image:url("loo.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 65%;
+            }
+            form{
+    width:45rem;
+    margin:auto;
+    color:whitesmoke;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(11, 15, 13, 0.582);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    
+ }
+        </style>
+        <script>
+        
+            function LoginValidation(){
+                var uname=document.myform.username.value;
+                var password=document.myform.password.value;
+                var x =document.getElementById("mycheck");
+                if(uname==null || uname==""){
+                    alert("UserName can not be blank")
+                    return false;
+                }
+                else if(password.length<6){
+                    alert("Password must be 6 letters")
+                    return false;
+                }
+                 else if(x.checked==false){
+                alert("Accept our term and conditions for further process")
+                return false;}
+                    return true
+                
+            }
+        
+        </script>
+    </head>
+    <body>
+        <li><a href="./website1.html">.HOME</a></li>
+             <br><br><br>
+            <form name="myform" action= "loginpage.html" onsubmit="return LoginValidation(this)">
+                <br>
+            <center>
+                <h1>REGISTRATION</h1>
+                <hr>
+                <b>Name:<input type="text" placeholder="Your Name.." autofocus> </b><br><br>
+                <b> Mobile Number:<input type="tel" pattern="{0-9}[10]"></b><br><br>
+                <b> Email ID:<input list="email" name="mail"><br><br>
+                    <datalist id="email">
+                        <option value="fhkfidsvjh@gmail.com">fhkfidsvjh@gmail.com</option>
+                        <option value="faysdfbdyy@yahoo.com">faysdfbdyy@yahoo.com</option>
+                        <option value="dvcdhcbquedb@outlook.com">dvcdhcbquedb@outlook.com</option>
+                        <option value="cghvsccvkcvgvccdv@hotmail.com">cghvsccvkcvgvccdv@hotmail.com</option>
+                    </datalist>
+                </select></b>
+                <b>Address:<br>
+                    <textarea name="mytext" cols="30" rows="10">your delivary address...</textarea>   </b>
+                 <br><br><b>User Name : <input type="text" name="username"> <br><br>
+                    Password :  <input type="password" name="password"> <br></b>
+                             
+                <br><input type="checkbox" id="mycheck">Terms and Conditions:You will be accepting our term and conditionsby clicking the check box.
+                <br><br><b><input type="submit" onclick="LoginValidation()"value="Submit"> </b>
+            </center>
+        </form>
+    </body>
+</html>

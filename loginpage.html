@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <title>javascript</title>
+        <style>
+             @media screen and (min-width:400px) and (max-width:600px){
+                body{
+                background-image:url("loo.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 65%;
+            }
+            form{
+    width:25rem;
+    margin:5%;
+    color:whitesmoke;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(11, 15, 13, 0.582);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    height: 70%;
+ }  
+            }
+            @media screen and (min-width:601px) and (max-width:800px){
+                body{
+                background-image:url("loo.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 65%;
+            }
+            form{
+    width:35rem;
+    margin:10%;
+    color:whitesmoke;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(11, 15, 13, 0.582);
+    border-radius: 22px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    height: 70%;
+ }
+            }
+            @media screen and (min-width:801px){
+                body{
+                background-image:url("loo.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 65%;
+            }
+            form{
+    width:45rem;
+    margin:15%;
+    color:whitesmoke;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(11, 15, 13, 0.582);
+    border-radius: 32px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    height: 70%;
+ }
+            }
+       
+        </style>
+        <script>
+            function LoginValidation(){
+                var uname=document.myform.username.value;
+                var password=document.myform.password.value;
+                if(uname==null || uname==""){
+                    alert("Name can not be blank")
+                    return false;
+                }
+                else if(password.length<6){
+                    alert("Password must be 6 letters")
+                    return false;
+                }
+                
+                    return true
+                
+            }
+        </script>
+        <body>
+            <li><a href="./website1.html">.HOME</a></li>
+           <center>
+            <form name="myform" action= "website1.html" onsubmit="return LoginValidation(this)">
+                <br>
+                <b><i><h1>Login Page</h1> </i></b>
+                <hr>
+                <br><br>
+                User Name : <input type="text" name="username"> <br><br>
+                Password :  <input type="password" name="password"> <br>
+                         <input type="submit" value="Submit"> 
+                         <span style="color: blue;">Create a new account</span>  
+                         <a href=".\Register.html">?</a></h1></b>
+            </form>
+        </center>
+        </body>
+    </head>
+</html>

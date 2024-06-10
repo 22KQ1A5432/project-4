@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Radio Button Validation</title>
+  <style>
+    body{
+        background-image:url("banana.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .abc{
+        width:25rem;
+margin:5%;
+color:whitesmoke;
+backdrop-filter: blur(16px) saturate(180%);
+-webkit-backdrop-filter: blur(16px) saturate(180%);
+background-color: rgba(11, 15, 13, 0.582);
+border-radius: 12px;
+border: 1px solid rgba(255, 255, 255, 0.125);
+height: 70%; 
+    }
+
+</style>
+</head>
+<body>
+  <li><a href="./website1.html">.HOME</a></li>
+    <center>
+        <div class="abc">
+        <h1><b><i><u>B-DAY VOCHER</u></i></b></h1>
+        <b>Name:<input type="text" name="name"autofocus placeholder="as per aadhar"></b><br><br>
+        <b>D_O_B:<input type="date" name="dob"></b><br><br>
+        <b>Identity Proof:<br><form action="/action_page.php"><br>
+            <input type="file" id="myFile" name="filename"><br><br></form></b>
+        
+  <b>Radio Button Validation</b>
+  <form action="welcome.html" id="radioForm" onsubmit="return validateForm()">
+    <label>
+      <input type="radio" name="gender" value="male"> Male
+    </label><br>
+
+    <label>
+      <input type="radio" name="gender" value="female"> Female
+    </label><br>
+
+    <label>
+      <input type="radio" name="gender" value="other"> Other
+    </label><br>
+
+    <b>Email ID:<input list="email" name="mail"><br><br>
+        <datalist id="email">
+            <option value="fhkfidsvjh@gmail.com">fhkfidsvjh@gmail.com</option>
+            <option value="faysdfbdyy@yahoo.com">faysdfbdyy@yahoo.com</option>
+            <option value="dvcdhcbquedb@outlook.com">dvcdhcbquedb@outlook.com</option>
+            <option value="cghvsccvkcvgvccdv@hotmail.com">cghvsccvkcvgvccdv@hotmail.com</option>
+        </datalist>
+    </select></b>
+    <b>Mobile Number:<input type="tel" name="tel" pattern="[0-9]{10}"></b> <br>
+     <br>  
+      </b>
+  
+    <input type="submit" value="Submit">
+</form>
+</center>
+  <script>
+    function validateForm() {
+      const radioButtons = document.getElementsByName('gender');
+      let checkedButton = false;
+
+      // Check if any radio button is checked
+      for (let i = 0; i < radioButtons.length; i++) {
+        if (radioButtons[i].checked) {
+          checkedButton = true;
+          break;
+        }
+      }
+      // If no radio button is checked
+      if (!checkedButton) {
+        alert("Please select a gender.");
+        return false;
+      }
+      return true;
+    }
+  </script>
+</body>
+</html>

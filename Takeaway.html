@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <title>https:\\www.vanabojanam.com\Dishes</title>
+        <style>
+         body{
+            background-color: rgb(180, 180, 171);
+            color: wheat;
+             
+         }
+         .abd{
+            font-family:cursive ;
+         }
+        
+         h1{
+            text-align: center;
+         } 
+         .abc{
+    width:35rem;
+    margin: auto;
+    color:whitesmoke;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(11, 15, 13, 0.582);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+ }
+
+       </style>
+      <script>
+        function myfun(){
+            
+            let uname=document.myform.fn.value;
+            let lname=document.myform.ln.value;
+            var mname=document.myform.Mobile.value;
+            var ename=document.myform.mymails.value;
+            var qname=document.myform.mymail.value;
+            var tname=document.myform.price.value;
+           
+            window.document.write("<b>FirstName: <b>");
+            window.document.write(uname);
+           window.document.write("<br>");
+           window.document.write("<br>");
+            window.document.write("LastName: ");
+           
+            window.document.write(lname);
+            window.document.write("<br>");
+            window.document.write("<br>");
+            window.document.write("Mobile Number: ");
+            window.document.write(mname);
+            window.document.write("<br>");
+            window.document.write("<br>");
+            window.document.write("Email Id: ");
+            window.document.write(ename);
+            window.document.write("<br>");
+            window.document.write("<br>");
+            window.document.write("Quantity Number: ");
+            window.document.write(qname);
+            window.document.write("<br>");
+            window.document.write("<br>");
+            window.document.write("Total Price: ");
+            window.document.write(tname);
+            
+           
+
+        }
+    </script>
+    </head>
+    <body>
+        <br>
+        <br>
+        <body background="food.jpg"></body>
+        
+        <div class="abc">
+            <br>
+        
+            <br>
+        <h1>PLACE YOUR ORDER</h1>
+        <hr>
+        <form name="myform" action= "#" onsubmit="return LoginValidation()">
+       
+        <h2 class="abd"><h1>FirstName:<input type="text" name="fn" placeholder="Firstname"></h2></h1>
+        <h2 class="abd"><h1>LastName:<input type="text" name="ln" placeholder="Lastname"></h2></h1>
+        <h2 class="abd"><h1>Mobile Number:<input type="tel" name="Mobile" pattern="[0-9]{10}" ></h2></hi>
+        <h2 class="abd"><h1>Email Address:<input list="email" name="mymails"></h2>
+        <datalist id="email">
+            <option value="fhkfidsvjh@gmail.com">fhkfidsvjh@gmail.com</option>
+            <option value="faysdfbdyy@yahoo.com">faysdfbdyy@yahoo.com</option>
+            <option value="dvcdhcbquedb@outlook.com">dvcdhcbquedb@outlook.com</option>
+            <option value="cghvsccvkcvgvccdv@hotmail.com">cghvsccvkcvgvccdv@hotmail.com</option>
+        </datalist>
+        
+        <h2 class="abd"><h1>Quantity:<input type="number" name="mymail"></h2>
+            <h2 class="abd"><h1>Total Price:<input type="text" name="price"></h2>
+      
+        <h1> <button type="button" onclick="myfun()">Submit</button></h1>
+        </form>     
+    </div>
+    
+    </body>
+
+</html>

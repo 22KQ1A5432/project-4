@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Recipt</title>
+        <script>
+            function myfun(){
+                var uname=document.myform.username.value;
+                var lname=document.myform.cname.value;
+                window.document.writeln(uname);
+                window.document.writeln(lname);
+
+            }
+        </script>
+    </head>
+    <body>
+        <form name="myform" action= "#" >
+        Username:<input type="text" name="username">
+       
+       name:<input type="text" name="cname">
+        
+        <button type="button" onclick="myfun()">ClickMe</button>
+        </form>
+    </body>
+</html>

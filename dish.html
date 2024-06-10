@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+    <head>
+        <style>
+			@media screen and (min-width:400px) and (max-width:600px){
+				body{
+                background-image: url("fo.png");
+               background-size: cover; 
+            }
+            h1{
+                text-align: center;
+            }
+				form{
+    width:15rem;
+    margin: auto;
+    color:whitesmoke;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(11, 15, 13, 0.582);
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+ }
+ 
+ nav ul{
+            list-style-type: none;
+            margin: 0;
+            padding-top: 8;
+        }
+        nav ul li{
+            display:inline;
+            margin-right: 1px;
+            margin-left: 0%;
+        }
+        h4{
+            text-align: center;
+          
+        }
+        nav ul li a{
+            color:rgb(243, 246, 248);
+            text-decoration: underline;
+        }
+        nav ul li a:hover{
+            text-decoration: underline;
+        }
+               
+
+			}
+			@media screen and (min-width:601px) and (max-width:899px){
+				body{
+                background-image: url("fo.png");
+               background-size: cover; 
+            }
+            h1{
+                text-align: center;
+            }
+				form{
+    width:25rem;
+    margin: auto;
+    color:whitesmoke;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(11, 15, 13, 0.582);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+ }
+ 
+ nav ul{
+            list-style-type: none;
+            margin: 0;
+            padding-top: 8;
+        }
+        nav ul li{
+            display:inline;
+            margin-right: 48px;
+            margin-left: 0%;
+        }
+        h4{
+            text-align: center;
+          
+        }
+        nav ul li a{
+            color:rgb(243, 246, 248);
+            text-decoration: underline;
+        }
+        nav ul li a:hover{
+            text-decoration: underline;
+        }
+               
+
+			}
+			@media screen and (min-width:900px){
+				body{
+                background-image: url("fo.png");
+               background-size: cover; 
+            }
+            h1{
+                text-align: center;
+            }
+				form{
+    width:55rem;
+    margin: auto;
+    color:whitesmoke;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(11, 15, 13, 0.582);
+    border-radius: 32px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+          }
+		  
+			nav ul{
+            list-style-type: none;
+            margin: 0;
+            padding-top: 8;
+        }
+        nav ul li{
+            display:inline;
+            margin-right: 108px;
+            margin-left: 2%;
+        }
+        h4{
+            text-align: center;
+          
+        }
+        nav ul li a{
+            color:rgb(243, 246, 248);
+            text-decoration: underline;
+        }
+        nav ul li a:hover{
+            text-decoration: underline;
+        }
+               
+
+			}
+
+.container {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 40px 0;
+}
+
+.container .card {
+	position: relative;
+	width: 300px;
+	height: 400px;
+	background: rgba(255, 255, 255, 0.05);
+	margin: 20px;
+	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+	border-radius: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	backdrop-filter: blur(10px);
+}
+
+.container .card .content {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	transition: 0.5s;
+}
+
+.container .card:hover .content {
+	transform: translateY(-20px);
+}
+
+.container .card .content .imgBx {
+	position: relative;
+	width: 150px;
+	height: 150px;
+	overflow: hidden;
+}
+
+.container .card .content .imgBx img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.container .card .content .contentBx h3 {
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 500;
+	font-size: 18px;
+	text-align: center;
+	margin: 20px 0 10px;
+	line-height: 1.1em;
+}
+
+.container .card .content .contentBx h3 span {
+	font-size: 12px;
+	font-weight: 300;
+	text-transform: initial;
+}
+
+.container .card .sci {
+	position: absolute;
+	bottom: 50px;
+	display: flex;
+}
+
+.container .card .sci li {
+	list-style: none;
+	margin: 0 10px;
+	transform: translateY(40px);
+	transition: 0.5s;
+	opacity: 0;
+}
+
+.container .card:hover .sci li {
+	transform: translateY(0px);
+	opacity: 1;
+}
+
+.container .card .sci li a {
+	color: #fff;
+	font-size: 20px;
+}
+
+		</style>
+    </head>
+<body>
+	<li><a href="./website1.html">.HOME</a></li>
+	<form action="#"> 
+        <h1>DISHES IN OUR MENU</h1>
+    
+	<br>
+	<br>
+   <nav>
+<ul>
+	  <li><b><a href = "./tiffin.html">TIFFIN|</a></li></b>
+	  <li><b><a href = "./meals.html">MEALS|</a></li></b>
+	  <li><b><a href = "./fast.html">FASTFOOD|</a></li></b>
+	  <li><b><a href = "./desserts.html">DESERTS</a></li></b>
+</form>   
+   </ul>
+</nav>
+	<section>
+		<div class="container">
+			<div class="card">
+				<div class="content">
+					<div class="imgBx">
+						<img src="Mutton-Biryani.jpg">
+					</div>
+					<div class="contentBx">
+						<h3>Mutton Biriyani<br><span>Rating:5-star</span><br><span>Price:</span><span id="price">400</span></h3>
+					</div>
+				</div>
+				<ul class="sci">
+					<li>
+						<a href="Takeaway.html">ORDER</a>
+					</li>
+					
+				</ul>
+			</div>
+			<div class="card">
+				<div class="content">
+					<div class="imgBx">
+						<img src="chicken_biriyani.jpg">
+					</div>
+					<div class="contentBx">
+						<h3>CHICKEN BIRIYANI<br><span>Rating : 5-star</span><br><span>Price:600/-</span></h3>
+					</div>
+				</div>
+				<ul class="sci">
+					<li>
+						<a href="Takeaway.html">ORDER</a>
+					
+				</ul>
+			</div>
+			<div class="card">
+				<div class="content">
+					<div class="imgBx">
+						<img src="veg-biriyani.jpg">
+					</div>
+					<div class="contentBx">
+						<h3>VEG-Bririyani<br><span>Rating:4-star</span><br><span>Price:300/-</span></h3>
+					</div>
+				</div>
+				<ul class="sci">
+					<li>
+						<a href="Takeaway.html">ORDER</a>
+					</li>
+					
+				</ul>
+			</div>
+			<div class="card">
+				<div class="content">
+					<div class="imgBx">
+						<img src="Panner.jpg">
+					</div>
+					<div class="contentBx">
+						<h3>Panner Butter Masala<br><span>Rating : 4-star</span><br><span>Price:400/-</span></h3>
+					</div>
+				</div>
+				<ul class="sci">
+					<li>
+						<a href="Takeaway.html">ORDER</a>
+					
+				</ul>
+			</div>
+			<div class="card">
+				<div class="content">
+					<div class="imgBx">
+						<img src="Noodles.jpg">
+					</div>
+					<div class="contentBx">
+						<h3>Noodles<br><span>Rating : 5-star</span><br><span>Price:500/-</span></h3>
+					</div>
+				</div>
+				<ul class="sci">
+					<li>
+						<a href="Takeaway.html">ORDER</a>
+					
+				</ul>
+			</div>
+			<div class="card">
+				<div class="content">
+					<div class="imgBx">
+						<img src="Avakaya.jpg">
+					</div>
+					<div class="contentBx">
+						<h3>Avakaya Special<br><span>Rating : 5-star</span><br><span>Price:400/-</span></h3>
+					</div>
+				</div>
+				<ul class="sci">
+					<li>
+						<a href="Takeaway.html">ORDER</a>
+					
+				</ul>
+			</div>
+			<div class="card">
+				<div class="content">
+					<div class="imgBx">
+						<img src="chapathi.jpg">
+					</div>
+					<div class="contentBx">
+						<h3>Chapati<br><span>Rating : 4-star</span><br><span>Price:700/-</span></h3>
+					</div>
+				</div>
+				<ul class="sci">
+					<li>
+						<a href="Takeaway.html">ORDER</a>
+					
+				</ul>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
